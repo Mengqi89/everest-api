@@ -7,7 +7,7 @@
 
 [Live link to Everest International Education](https://everest.everest.now.sh/)
 
-[Api Link](https://stormy-anchorage-71465.herokuapp.com/api)
+[Api Link](https://salty-river-88697.herokuapp.com/api)
 
 ### Api
 ```
