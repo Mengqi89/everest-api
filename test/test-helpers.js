@@ -51,7 +51,7 @@ function makeTeacherArray() {
             last_name: 'Kahreem',
             age: 33,
             sex: 'Male',
-            nationality: 'USA',
+            nationality: 'American',
             race: 'Other',
             native_speaker: true,
             married: 'yes',
