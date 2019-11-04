@@ -5,7 +5,7 @@
 
 ---
 
-[Live link to Everest International Education](https://everest.everest.now.sh/)
+[Live link to Everest International Education](https://everest.wmq516.now.sh/)
 
 [Api Link](https://salty-river-88697.herokuapp.com/api)
 
