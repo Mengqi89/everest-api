@@ -5,7 +5,7 @@ BEGIN;
   everest_schools,
   everest_jobs,
   everest_teachers,
-  everest_applications
+  everest_applications 
   RESTART IDENTITY CASCADE;
 
 INSERT INTO everest_admins

@@ -40,6 +40,7 @@ teacherRouter
     .post('/', (req, res, next) => {
         const {
             username,
+            email,
             password,
             first_name,
             last_name,
@@ -58,8 +59,10 @@ teacherRouter
             years_teaching_abroad
         } = req.body
 
+
         for (const field of [
             'username',
+            'email',
             'password',
             'first_name',
             'last_name',
@@ -95,6 +98,7 @@ teacherRouter
                     .then(hashedPassword => {
                         const newTeacher = {
                             username,
+                            email,
                             password: hashedPassword,
                             first_name,
                             last_name,
@@ -113,6 +117,7 @@ teacherRouter
                             years_teaching_abroad
 
                         }
+                        console.log(newTeacher)
                         return TeacherService.insertTeacher((req.app.get('db')), newTeacher)
                             .then(teacher => res.status(201).json(teacher))
                     })
@@ -166,6 +171,7 @@ teacherRouter
 function newTeacherFn(req) {
     return ({
         username,
+        email,
         first_name,
         last_name,
         age,
