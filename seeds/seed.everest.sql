@@ -262,6 +262,7 @@ VALUES
 INSERT INTO everest_teachers
   (
   teacher_approved,
+  email,
   username,
   password,
   first_name,
@@ -283,6 +284,7 @@ INSERT INTO everest_teachers
 VALUES
   (
     false,
+    'testteacher@test.com',
     'NatBowie',
     '$2a$12$bS0HJTSC64Znaz.armIYaOr1on3tSZOgMqN9JbbljwdvE96o.B.G2',
     -- 'Password1!',
@@ -304,6 +306,7 @@ VALUES
     ),
   (
     false,
+    'testteacher1@test.com',
     'NatBowie1',
     '$2a$12$bS0HJTSC64Znaz.armIYaOr1on3tSZOgMqN9JbbljwdvE96o.B.G2',
     -- 'Password1!',
