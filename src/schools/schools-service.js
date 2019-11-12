@@ -87,7 +87,7 @@ const SchoolsService = {
       school_website: school.school_website,
       housingInformation: {
         apartment_provided: school.apartment_provided,
-        housing_assistance: school.housing_assistance,
+        housing_stipend: school.housing_stipend,
         size_of_housing: school.size_of_housing,
         shared_room: school.shared_room,
         private_room: school.private_room,

@@ -1,8 +1,11 @@
-CREATE TABLE everest_schools (
+CREATE TABLE everest_schools
+(
     id SERIAL PRIMARY KEY,
     username TEXT NOT NULL UNIQUE,
     password TEXT NOT NULL,
     school_name TEXT NOT NULL,
+    student_age_youngest INTEGER,
+    student_age_oldest INTEGER,
     school_type TEXT NOT NULL,
     school_size INTEGER,
     public_or_private TEXT,
@@ -11,10 +14,8 @@ CREATE TABLE everest_schools (
     notable_facts TEXT,
     school_website TEXT,
     apartment_provided BOOLEAN,
-    housing_assistance TEXT,
+    housing_stipend INTEGER,
     size_of_housing TEXT,
-    -- shared_room BOOLEAN,
-    -- private_room BOOLEAN,
     shared_or_private_living_space TEXT,
     housing_notes TEXT,
     housing_on_or_off TEXT,
@@ -35,7 +36,7 @@ CREATE TABLE everest_schools (
     disability_insurance BOOLEAN,
     other_insurance BOOLEAN,
     assistance_obtaining_work_visa BOOLEAN,
-    school_pay_work_visa TEXT,
+    school_pay_work_visa BOOLEAN,
     school_reimburse_costs_for_obtaining_visa_in_us BOOLEAN,
     assistance_opening_chinese_bank_account BOOLEAN,
     assistance_shopping_and_settling_in BOOLEAN,

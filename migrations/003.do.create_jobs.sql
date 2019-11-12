@@ -1,6 +1,8 @@
-CREATE TABLE everest_jobs (
+CREATE TABLE everest_jobs
+(
     id SERIAL PRIMARY KEY,
     job_title TEXT NOT NULL,
+    vacancies INTEGER,
     course TEXT NOT NULL,
     grade_level TEXT NOT NULL,
     textbook_used TEXT,
@@ -25,7 +27,9 @@ CREATE TABLE everest_jobs (
     sick_days INTEGER,
     personal_days INTEGER,
     time_off_for_holidays BOOLEAN,
-    total_salary INTEGER NOT NUll,
+    total_salary_lowest INTEGER,
+    total_salary_highest INTEGER,
+    full_description TEXT,
     job_school_id INTEGER REFERENCES everest_schools(id),
     job_approved BOOLEAN NOT NULL DEFAULT false
 );
