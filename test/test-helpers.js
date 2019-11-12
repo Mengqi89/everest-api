@@ -203,7 +203,9 @@ function makeJobArray() {
             sick_days: 10,
             personal_days: 5,
             time_off_for_holidays: false,
-            total_salary: 15000,
+            total_salary_lowest: 15000,
+            tota_salary_highest: 10000,
+            full_description: 'This is a great job.',
             job_school_id: 1,
             job_approved: true
         },
@@ -232,7 +234,9 @@ function makeJobArray() {
             sick_days: 10,
             personal_days: 5,
             time_off_for_holidays: false,
-            total_salary: 15000,
+            total_salary_lowest: 15000,
+            tota_salary_highest: 10000,
+            full_description: 'This is a great job.',
             job_school_id: 2,
             job_approved: true
         }

@@ -37,10 +37,12 @@ const JobsService = {
     },
 
     serializeJob(job) {
+        console.log(job)
         return {
             job_id: job.job_id,
             school_id: job.job_school_id,
             job_title: job.job_title,
+            vacancies: job.vacancies,
             course: job.course,
             grade_level: job.grade_level,
             textbook_used: job.textbook_used,
@@ -62,7 +64,9 @@ const JobsService = {
             sick_days: job.sick_days,
             personal_days: job.personal_days,
             time_off_for_holidays: job.time_off_for_holidays,
-            total_salary: job.total_salary,
+            total_salary_lowest: job.total_salary_lowest,
+            total_salary_highest: job.total_salary_highest,
+            full_description: job.full_description,
             location: job.location
         }
     }
