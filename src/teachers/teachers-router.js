@@ -42,6 +42,7 @@ teacherRouter
             username,
             email,
             password,
+            password_confirm,
             first_name,
             last_name,
             age,
@@ -59,11 +60,11 @@ teacherRouter
             years_teaching_abroad
         } = req.body
 
-
         for (const field of [
             'username',
             'email',
             'password',
+            'password_confirm',
             'first_name',
             'last_name',
             'age',
@@ -83,6 +84,10 @@ teacherRouter
                 return res.status(400).json({
                     error: `Missing '${field}' in request body`
                 })
+
+        if (password !== password_confirm) {
+            return res.status(400).json({ error: `Passwords need to match.` })
+        }
 
         const passwordError = SchoolsService.validatePassword(password)
 
