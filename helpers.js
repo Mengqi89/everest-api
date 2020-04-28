@@ -67,27 +67,8 @@ const school2 = {
   location: 'Sichuan',
   notableFacts: 'Maecenas pharetra libero at metus mattis blandit et eu urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean iaculis, purus in ultrices tempus, augue elit ultrices odio, eget tempus dui neque scelerisque nibh. Phasellus egestas eros congue posuere vehicula. Quisque eu urna magna. Donec eget nisl vel est lacinia malesuada. Phasellus porta dignissim nisl, id ultricies leo consequat non. Mauris in purus tortor. In ullamcorper suscipit efficitur. Donec eget libero laoreet, condimentum tellus sed, cursus tortor.',
   schoolWebsite: 'www.facebook.com',
-  apartmentProvided: false, //rest is not applicable since apartment not included
-  // housingAssistance: 'Will help teacher find housing.',
-  // size: '',
-  // shared: null,
-  // private: null,
-  // housingNotes: '',
-  // housingOnOrOff: '',
-  // timeToGetToClass: '10 minute walk',
-  // distanceToPublicTrans: '10 minute walk to nearest subway stop',
-  // schoolChargeRent: false,
-  // schoolRent: 'No rent',
-  // schoolChargeUtils: false,
-  // schoolUtils: 'No charge',
-  // furnished: true,
-  // furnishedNotes: 'Queen-size bed, writing desk, six chairs',
-  // appliancesIncluded: 'Refrigerator, microwave, gas stove, television, air conditioner, washing machine',
-  // internet: 'Wired and wireless; wireless only; can be installed; no.',
-  // computerIncluded: 'Desktop',
-  schoolProvideHealthInsurance: false, //commented out below cause false
-  // providedInsuranceNotes: '',
-  // medicalExpenesesPaid: '¥1,000 deductible',
+  apartmentProvided: false,
+  schoolProvideHealthInsurance: false,
   disabilityInsurance: false,
   otherInsurance: false,
   assistanceObtainingWorkVisa: true,
@@ -99,10 +80,6 @@ const school2 = {
   otherWesternTeachersAtSchool: 4,
   westernAmenitiesAvailableNearSchoolTown: 'Restaurants, shopping, bars',
 }
-
-// splitObject(school1)
-
-// splitObjectKeys(school1)
 
 insertUnder(school1)
 

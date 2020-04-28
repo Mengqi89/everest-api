@@ -1,6 +1,4 @@
-// const path = require('path')
 const express = require('express')
-// const xss = require('xss')
 const JobsService = require('./jobs-service')
 
 const jobsRouter = express.Router()
@@ -80,7 +78,6 @@ jobsRouter
             newJob
         ).then(job => {
             res.status(201)
-                // .location(path.posix.join(req.originalUrl, `/${job_id}`))
                 .json(JobsService.serializeJob(job))
         })
             .catch(next)

@@ -2,12 +2,6 @@ const ApplicationsService = {
   getAllApplications(db) {
     return (
       db
-        // .from('everest_applications')
-        // .join('everest_teachers', 'everest_teachers.id', '=', 'everest_applications.teacher')
-        // .select('*')
-        // .join('everest_jobs', 'everest_jobs.id', '=', 'everest_applications.job')
-        // .select('*')
-        // .join('everest_schools', 'everest_schools.id', '=', 'everest_jobs.school_id')
         .from('everest_applications as apps')
         .select(
           'apps.id as app_id',

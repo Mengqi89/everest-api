@@ -120,29 +120,6 @@ adminsRouter
                 }
             })
             .catch(next)
-
-        // const passwordError = AdminsService.validatePassword(password)
-
-        // if (passwordError) {
-        //     return res.status(400).json({ error: passwordError })
-        // }
-
-        // AdminsService.hashPassword(password)
-        //     .then(hashedPassword => {
-        //         const updatedAdmin = {
-        //             first_name,
-        //             last_name,
-        //             password: hashedPassword,
-        //             email
-        //         }
-        //         return AdminsService.updateAdmin(req.app.get('db'), id, updatedAdmin)
-        //             .then(updatedAdmin => {
-        //                 res
-        //                     .status(201)
-        //                     .json(AdminsService.serializeAdmin(updatedAdmin))
-        //             })
-        //             .catch(next)
-        //     })
     })
     .delete((req, res, next) => {
         const id = req.params.id

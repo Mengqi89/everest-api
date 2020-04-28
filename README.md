@@ -1,11 +1,11 @@
 # Everest Api
 
 
-> Everest is an application for a client (Everest International Education) to handle applicants for teaching at schools in China. It has three types of main users, applicants/teachers, job posters/schools, and company/admins.
+> Everest is an application for a client (Everest International Education) to handle applicants for teaching at schools in China. It has two types of users, teacher and administrator.
 
 ---
 
-[Live link to Everest International Education](https://everest.wmq516.now.sh/)
+[Live link to Everest International Education](https://www.everest.education/)
 
 [Api Link](https://salty-river-88697.herokuapp.com/api)
 
